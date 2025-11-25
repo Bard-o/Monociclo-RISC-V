@@ -49,16 +49,19 @@ Explicación: el desplazamiento aritmético preserva el bit de signo (1), por es
 - `a = 0x0000000F` → bin: `00001111` → dec: `15`
 - `b = 0x000000F0` → bin: `11110000` → dec: `240`
 - `res = a ^ b = 0x000000FF` → bin: `00000000 00000000 00000000 11111111` → dec: `255`
+Explicación: se hace el XOR bit por bit
 
 ### 7) OR
 - `a = 0x0000000F` (bin `00001111`)
 - `b = 0x000000F0` (bin `11110000`)
 - `res = a | b = 0x000000FF` → bin: `11111111` → dec: `255`
+Explicación: se hace el OR bit por bit
 
 ### 8) AND
 - `a = 0x0000000F` (bin `...00001111`)
 - `b = 0x000000F0` (bin `...11110000`)
 - `res = a & b = 0x00000000` → bin: `00000000 00000000 00000000 00000000` → dec: `0`
+Explicación: se hace el AND bit por bit
 
 ### 9) SLT (signed less than)
 - `a = 0xFFFFFFFF` → bin: `11111111 11111111 11111111 11111111` → dec con signo: `-1`
