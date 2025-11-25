@@ -18,13 +18,13 @@ module tb_alu;
   alu dut(.a(a), .b(b), .alu_op(alu_op), .alu_res(alu_res));
 
   initial begin
-    $dumpfile("alu_tb.vcd");
+    $dumpfile("test/alu/alu_tb.vcd");
     $dumpvars(0, tb_alu);
 
-    a = 32'h00000010; b = 32'h00000003; alu_op = ADD;  #10; $display("ADD a=%h b=%h res=%h", a, b, alu_res);
-    a = 32'h00000010; b = 32'h00000003; alu_op = SUB;  #10; $display("SUB a=%h b=%h res=%h", a, b, alu_res);
-    a = 32'h00000010; b = 32'h00000003; alu_op = SLL;  #10; $display("SLL a=%h b=%h res=%h", a, b, alu_res);
-    a = 32'h80000000; b = 32'h0000001F; alu_op = SRL;  #10; $display("SRL a=%h b=%h res=%h", a, b, alu_res);
+    a = 32'h0000000A; b = 32'h00000003; alu_op = ADD;  #10; $display("ADD a=%h b=%h res=%h", a, b, alu_res);
+    a = 32'h0000000A; b = 32'h00000003; alu_op = SUB;  #10; $display("SUB a=%h b=%h res=%h", a, b, alu_res);
+    a = 32'h00000001; b = 32'h00000003; alu_op = SLL;  #10; $display("SLL a=%h b=%h res=%h", a, b, alu_res);
+    a = 32'h00000010; b = 32'h00000003; alu_op = SRL;  #10; $display("SRL a=%h b=%h res=%h", a, b, alu_res);
     a = 32'h80000000; b = 32'h0000001F; alu_op = SRA;  #10; $display("SRA a=%h b=%h res=%h", a, b, alu_res);
     a = 32'h0000000F; b = 32'h000000F0; alu_op = XOR_; #10; $display("XOR a=%h b=%h res=%h", a, b, alu_res);
     a = 32'h0000000F; b = 32'h000000F0; alu_op = OR_;  #10; $display("OR  a=%h b=%h res=%h", a, b, alu_res);

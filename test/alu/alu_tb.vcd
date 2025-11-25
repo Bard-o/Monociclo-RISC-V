@@ -1,0 +1,175 @@
+$date
+	Tue Nov 25 16:09:14 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_alu $end
+$var wire 32 ! alu_res [31:0] $end
+$var parameter 5 " ADD $end
+$var parameter 5 # AND_ $end
+$var parameter 5 $ OR_ $end
+$var parameter 5 % SLL $end
+$var parameter 5 & SLT $end
+$var parameter 5 ' SLTU $end
+$var parameter 5 ( SRA $end
+$var parameter 5 ) SRL $end
+$var parameter 5 * SUB $end
+$var parameter 5 + XOR_ $end
+$var reg 32 , a [31:0] $end
+$var reg 5 - alu_op [4:0] $end
+$var reg 32 . b [31:0] $end
+$scope module dut $end
+$var wire 32 / a [31:0] $end
+$var wire 32 0 a_signed [31:0] $end
+$var wire 32 1 a_unsigned [31:0] $end
+$var wire 5 2 alu_op [4:0] $end
+$var wire 32 3 alu_res [31:0] $end
+$var wire 32 4 b [31:0] $end
+$var wire 32 5 b_signed [31:0] $end
+$var wire 32 6 b_unsigned [31:0] $end
+$var parameter 5 7 ADD $end
+$var parameter 5 8 AND_ $end
+$var parameter 5 9 OR_ $end
+$var parameter 5 : SLL $end
+$var parameter 5 ; SLT $end
+$var parameter 5 < SLTU $end
+$var parameter 5 = SRA $end
+$var parameter 5 > SRL $end
+$var parameter 5 ? SUB $end
+$var parameter 5 @ XOR_ $end
+$var reg 32 A result [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 @
+b1 ?
+b110 >
+b111 =
+b100 <
+b11 ;
+b10 :
+b1000 9
+b1001 8
+b0 7
+b101 +
+b1 *
+b110 )
+b111 (
+b100 '
+b11 &
+b10 %
+b1000 $
+b1001 #
+b0 "
+$end
+#0
+$dumpvars
+b1101 A
+b11 6
+b11 5
+b11 4
+b1101 3
+b0 2
+b1010 1
+b1010 0
+b1010 /
+b11 .
+b0 -
+b1010 ,
+b1101 !
+$end
+#10000
+b111 !
+b111 3
+b111 A
+b1 -
+b1 2
+#20000
+b1000 !
+b1000 3
+b1000 A
+b10 -
+b10 2
+b1 0
+b1 1
+b1 ,
+b1 /
+#30000
+b10 !
+b10 3
+b10 A
+b110 -
+b110 2
+b10000 0
+b10000 1
+b10000 ,
+b10000 /
+#40000
+b11111111111111111111111111111111 !
+b11111111111111111111111111111111 3
+b11111111111111111111111111111111 A
+b111 -
+b111 2
+b11111 5
+b11111 6
+b11111 .
+b11111 4
+b10000000000000000000000000000000 0
+b10000000000000000000000000000000 1
+b10000000000000000000000000000000 ,
+b10000000000000000000000000000000 /
+#50000
+b11111111 !
+b11111111 3
+b11111111 A
+b101 -
+b101 2
+b11110000 5
+b11110000 6
+b11110000 .
+b11110000 4
+b1111 0
+b1111 1
+b1111 ,
+b1111 /
+#60000
+b1000 -
+b1000 2
+#70000
+b0 !
+b0 3
+b0 A
+b1001 -
+b1001 2
+#80000
+b1 !
+b1 3
+b1 A
+b11 -
+b11 2
+b1 5
+b1 6
+b1 .
+b1 4
+b11111111111111111111111111111111 0
+b11111111111111111111111111111111 1
+b11111111111111111111111111111111 ,
+b11111111111111111111111111111111 /
+#90000
+b100 -
+b100 2
+b11111111111111111111111111111111 5
+b11111111111111111111111111111111 6
+b11111111111111111111111111111111 .
+b11111111111111111111111111111111 4
+b1 0
+b1 1
+b1 ,
+b1 /
+#110000
