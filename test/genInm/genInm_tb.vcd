@@ -1,0 +1,80 @@
+$date
+	Tue Nov 25 21:00:14 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_genInm $end
+$var wire 32 ! imm_out [31:0] $end
+$var parameter 3 " BRANCH_TYPE $end
+$var parameter 3 # IARITH_LOAD $end
+$var parameter 3 $ STORE_TYPE $end
+$var reg 3 % IMMSrc [2:0] $end
+$var reg 32 & instr [31:0] $end
+$scope function enc_b $end
+$upscope $end
+$scope function enc_i $end
+$upscope $end
+$scope function enc_s $end
+$upscope $end
+$scope module dut $end
+$var wire 3 ' IMMSrc [2:0] $end
+$var wire 32 ( instr [31:0] $end
+$var parameter 3 ) BRANCH_TYPE $end
+$var parameter 3 * IARITH_LOAD $end
+$var parameter 3 + STORE_TYPE $end
+$var reg 32 , imm_out [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 +
+b0 *
+b101 )
+b1 $
+b0 #
+b101 "
+$end
+#0
+$dumpvars
+b11111111111 ,
+b1111111111100000000000000000000 (
+b0 '
+b1111111111100000000000000000000 &
+b0 %
+b11111111111 !
+$end
+#1000
+b11111111111111111111111111111111 !
+b11111111111111111111111111111111 ,
+b11111111111100000000000000000000 &
+b11111111111100000000000000000000 (
+#2000
+b100100011 !
+b100100011 ,
+b10010000000000000000110000000 &
+b10010000000000000000110000000 (
+b1 %
+b1 '
+#3000
+b11111111111111111111111111111111 !
+b11111111111111111111111111111111 ,
+b11111110000000000000111110000000 &
+b11111110000000000000111110000000 (
+#4000
+b1000 !
+b1000 ,
+b10000000000 &
+b10000000000 (
+b101 %
+b101 '
+#5000
+b10000 !
+b10000 ,
+b100000000000 &
+b100000000000 (
+#11000
