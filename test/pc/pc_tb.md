@@ -2,10 +2,6 @@
 
 El `pc` mantiene la dirección actual de instrucción en `address` y la actualiza con `next_pc` en cada flanco de subida de `clk`. Tiene reset asíncrono activo en bajo (`rst_n`): cuando `rst_n=0`, `address` se fuerza a `0`.
 
-
-- `always @(posedge clk or negedge rst_n)` `src/pc.sv:8`: actualización en flanco de subida de reloj y respuesta inmediata al reset en flanco negativo.
-- `if (!rst_n) address <= 32'b0; else address <= next_pc;` `src/pc.sv:9–12`.
-
 ## ¿Qué valida el testbench?
 
 - Inicializa `clk=0`, `rst_n=0`, `next_pc=0` y genera `pc_tb.vcd`.
