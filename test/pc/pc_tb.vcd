@@ -1,0 +1,108 @@
+$date
+	Wed Nov 26 15:17:18 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_pc $end
+$var wire 32 ! address [31:0] $end
+$var reg 1 " clk $end
+$var reg 32 # next_pc [31:0] $end
+$var reg 1 $ rst_n $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 32 % next_pc [31:0] $end
+$var wire 1 $ rst_n $end
+$var reg 32 & address [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 &
+b0 %
+0$
+b0 #
+0"
+b0 !
+$end
+#5000
+1"
+#10000
+0"
+#12000
+1$
+#15000
+1"
+#20000
+b100 #
+b100 %
+0"
+#25000
+b100 !
+b100 &
+1"
+#30000
+b1000 #
+b1000 %
+0"
+#35000
+b1000 !
+b1000 &
+1"
+#40000
+b1100 #
+b1100 %
+0"
+#45000
+b1100 !
+b1100 &
+1"
+#50000
+b10000 #
+b10000 %
+0"
+#55000
+b10000 !
+b10000 &
+1"
+#60000
+b10100 #
+b10100 %
+0"
+#65000
+b10100 !
+b10100 &
+1"
+#70000
+b0 !
+b0 &
+0$
+0"
+#75000
+b10100 !
+b10100 &
+1$
+1"
+#80000
+b100 #
+b100 %
+0"
+#85000
+b100 !
+b100 &
+1"
+#90000
+0"
+#95000
+1"
+#100000
+0"
+#105000
+1"
