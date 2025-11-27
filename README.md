@@ -12,10 +12,10 @@ la cual se encargará de ejecutar las instrucciones del procesador.
 
 El proyecto está dividido en las siguientes carpetas:
 
-- `src`: Contiene la descripción de hardware del procesador monociclo.
-- `test`: Contiene los testbenches para verificar el funcionamiento del procesador. junto con la documentación de cada modulo.
-- `build`: Contiene los archivos generados durante la compilación del proyecto. (Lo normal sería ignorar estos archivos o borrarlos para tu añadir tus propias compilaciones)
-- `doc`: Contiene manuales y guias sobre el tema, incluyendo la guia de pineado
+    `src`: Contiene la descripción de hardware del procesador monociclo.
+     `test`: Contiene los testbenches para verificar el funcionamiento del procesador. junto con la documentación de cada modulo.
+    - `build`: Contiene los archivos generados durante la compilación del proyecto. (Lo normal sería ignorar estos archivos o borrarlos para tu añadir tus propias compilaciones)
+    - `doc`: Contiene manuales y guias sobre el tema, incluyendo la guia de pineado
 
 No voy a comentar en este README el funcionamiento de cada modulo, ya que cada modulo se encuentra documentado en la carpeta `test`.
 
